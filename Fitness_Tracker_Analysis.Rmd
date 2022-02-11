@@ -5,6 +5,13 @@ output:
     keep_md: true
 ---
 
+<style type="text/css">
+  body{
+  font-size: 12pt;
+  font-family:'Times New Roman'
+}
+</style>
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -98,7 +105,7 @@ total <- length(df_fitness$Id)
 percentage <- (non_zero/total)*100
 noquote(paste(round(percentage,2), "%"))
 ```
-_Since it only 3% of the column is available and we have other informative features than "LoggedActivitiesDistance" I will ignore this column._
+*_Since it only 3% of the column is available and we have other informative features than "LoggedActivitiesDistance" I will ignore this column._*
 
 
 
@@ -140,7 +147,7 @@ plot_ly(User_activity_level, x = ~Total_steps_mean, color = ~activity_level, typ
 vis
 
 ```
-_Majority of users are low active type, that lead us to the next question what are the factors of low activity level?_ 
+*_Majority of users are low active type, that lead us to the next question what are the factors of low activity level?_*
 
 
 #### Q2: what could affect activity levels? is the weekday, month have a influnce on users?
